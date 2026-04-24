@@ -1,79 +1,271 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Lucille Eyombo e-Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f4f6f8;
-        }
-        h1 {
-            color: #1F3A5F;
-        }
-        h2 {
-            color: #1F3A5F;
-            border-bottom: 2px solid #1F3A5F;
-            padding-bottom: 5px;
-        }
-        .section {
-            margin-bottom: 40px;
-        }
-        .card {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 15px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucille Eyombo | Professional E-Portfolio</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1f3a5f;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 42px;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    nav {
+      background: white;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #1f3a5f;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #1f3a5f;
+      border-bottom: 3px solid #1f3a5f;
+      padding-bottom: 8px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      margin: 20px 0;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    }
+
+    .project h3 {
+      color: #1f3a5f;
+      margin-bottom: 5px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e8eef7;
+      color: #1f3a5f;
+      padding: 6px 10px;
+      margin: 4px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      background: #1f3a5f;
+      color: white;
+      padding: 30px 20px;
+      margin-top: 50px;
+    }
+
+    a {
+      color: #1f3a5f;
+    }
+
+    .button {
+      display: inline-block;
+      background: #1f3a5f;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    .button:hover {
+      background: #152941;
+    }
+  </style>
 </head>
 
 <body>
 
-<h1>Lucille Eyombo</h1>
-<p><strong>Associate Project Manager | Public Health Informatics</strong></p>
-<p>Maryland, USA | <a href="#">LinkedIn</a></p>
+<header>
+  <h1>Lucille Eyombo, PMP, CAPM, CSM</h1>
+  <p>Associate Project Manager | Healthcare Operations | Public Health Informatics</p>
+  <p>Maryland, USA</p>
+</header>
 
-<div class="section">
-<h2>Professional Summary</h2>
-<div class="card">
-<p>
-Associate Project Manager with 9+ years of experience in healthcare operations, specializing in program coordination, compliance, and process improvement. Transitioning into public health informatics with a focus on data-driven and patient-centered solutions.
-</p>
-</div>
-</div>
+<nav>
+  <a href="#about">About</a>
+  <a href="#pitch">Pitch</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-<div class="section">
-<h2>Projects</h2>
+<section id="about">
+  <h2>Professional Summary</h2>
+  <div class="card">
+    <p>
+      I am an Associate Project Manager with over nine years of experience in healthcare operations,
+      supporting program coordination, compliance, process improvement, and service delivery across
+      multiple healthcare service lines.
+    </p>
 
-<div class="card">
-<h3>Digital Health Education Program</h3>
-<p>Developed a multi-module bariatric and GLP-1 education program using GrowthHub 365.</p>
-</div>
+    <p>
+      I hold a Master’s in Project Management, dual bachelor’s degrees in Political Science and
+      Information Systems Management, and a Graduate Certificate in Lean and Agile Practices from
+      Georgetown University. I am also certified as a PMP, CAPM, and Certified Scrum Master.
+    </p>
 
-<div class="card">
-<h3>Airbus SPMO Governance Framework</h3>
-<p>Designed portfolio governance structure using Smartsheet.</p>
-</div>
+    <p>
+      My work sits at the intersection of healthcare, systems, technology, and public health informatics.
+      I focus on building structured, scalable, and patient-centered solutions that improve healthcare
+      operations, education, and outcomes.
+    </p>
+  </div>
+</section>
 
-<div class="card">
-<h3>MANA Medical Equipment Project</h3>
-<p>Led procurement and delivery of hospital equipment including lab and surgical devices.</p>
-</div>
+<section id="pitch">
+  <h2>Elevator Pitch</h2>
+  <div class="card">
+    <p>
+      I’m Lucille Eyombo, an Associate Project Manager with over nine years of experience in healthcare
+      operations, where I’ve supported program coordination, compliance, and process improvement across
+      multiple service lines.
+    </p>
 
-<div class="card">
-<h3>Customer Satisfaction Analysis</h3>
-<p>Performed healthcare data analysis using Excel to support quality improvement.</p>
-</div>
+    <p>
+      My background combines healthcare experience, project management, systems thinking, and public
+      health informatics. Recently, through my PHIT internship, I developed a structured digital education
+      program for bariatric and GLP-1 patients, translating complex clinical guidance into practical,
+      easy-to-follow content that supports long-term behavior change.
+    </p>
 
-</div>
+    <p>
+      I am currently focused on transitioning into roles in health technology and public health informatics,
+      where I can contribute to building more efficient, data-driven, and patient-centered healthcare systems.
+    </p>
+  </div>
+</section>
 
-<div class="section">
-<h2>Contact</h2>
-<div class="card">
-<p>Email: your@email.com</p>
-</div>
-</div>
+<section id="projects">
+  <h2>Portfolio Artifacts</h2>
+
+  <div class="card project">
+    <h3>Digital Health Education Program: Bariatric Surgery & GLP-1 Patient Support</h3>
+    <p><strong>Tool Used:</strong> GrowthHub 365</p>
+    <p>
+      Developed a structured digital education program for individuals undergoing bariatric surgery
+      or using GLP-1 medications. The program includes five core learning areas focused on mindset,
+      emotional eating, nutrition, boundaries, and long-term success.
+    </p>
+    <p>
+      This project demonstrates my ability to translate complex clinical and behavioral guidance into
+      practical, user-centered digital health education.
+    </p>
+  </div>
+
+  <div class="card project">
+    <h3>Strategic Portfolio Management & Governance Framework</h3>
+    <p><strong>Tool Used:</strong> Smartsheet</p>
+    <p>
+      Contributed to the development of a Strategic Portfolio Management Office framework for Airbus,
+      including governance tiers, portfolio lifecycle phases, stakeholder engagement, and performance
+      monitoring.
+    </p>
+    <p>
+      This project highlights my experience in strategic planning, portfolio governance, and executive-level
+      project alignment.
+    </p>
+  </div>
+
+  <div class="card project">
+    <h3>Medical Equipment Procurement & Handover Project</h3>
+    <p><strong>Tools Used:</strong> Excel, Word, Canva, WhatsApp, Email</p>
+    <p>
+      Led coordination for a medical equipment donation initiative supporting Muyuka District Hospital.
+      The project included procurement, logistics, stakeholder communication, shipment tracking, and
+      handover planning.
+    </p>
+    <p>
+      Equipment categories included patient monitors, standard infant warmers, binocular microscopes,
+      semi-automatic chemistry analyzers, auto hematology analyzers, mould incubators, delivery forceps,
+      and operating LED lamps.
+    </p>
+    <p>
+      The project included international freight logistics totaling 1,600,500 FCFA and strengthened hospital
+      capacity across clinical, laboratory, maternal, and surgical services.
+    </p>
+  </div>
+
+  <div class="card project">
+    <h3>Customer Satisfaction & Program Performance Analysis</h3>
+    <p><strong>Tool Used:</strong> Microsoft Excel</p>
+    <p>
+      Conducted detailed healthcare satisfaction survey analysis, including question-level review, monthly
+      summaries, surveyor summaries, nurse monitor analysis, sentiment review, and executive reporting.
+    </p>
+    <p>
+      This project demonstrates my ability to use data to identify service gaps, communicate insights,
+      and support quality improvement in healthcare programs.
+    </p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Core Skills</h2>
+  <div class="card">
+    <span class="tag">Project Management</span>
+    <span class="tag">Healthcare Operations</span>
+    <span class="tag">Public Health Informatics</span>
+    <span class="tag">Process Improvement</span>
+    <span class="tag">Compliance</span>
+    <span class="tag">Data Analysis</span>
+    <span class="tag">Stakeholder Engagement</span>
+    <span class="tag">Smartsheet</span>
+    <span class="tag">Excel</span>
+    <span class="tag">GrowthHub 365</span>
+    <span class="tag">Lean & Agile</span>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p><strong>Email:</strong> [insert your email]</p>
+    <p><strong>LinkedIn:</strong> <a href="[insert LinkedIn link]">View my LinkedIn profile</a></p>
+    <p><strong>Resume:</strong> <a href="[insert resume link]">View my resume</a></p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Lucille Eyombo | Professional E-Portfolio</p>
+</footer>
 
 </body>
 </html>
