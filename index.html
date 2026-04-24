@@ -3,110 +3,228 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lucille Eyombo | Professional E-Portfolio</title>
+  <title>Lucille Eyombo | Healthcare Operations & Public Health Informatics Portfolio</title>
 
   <style>
+    :root {
+      --navy: #0B1F33;
+      --blue: #1F4E79;
+      --gold: #C89B3C;
+      --cream: #F7F4EF;
+      --white: #FFFFFF;
+      --text: #263238;
+      --muted: #667085;
+      --border: #E5E7EB;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f6f8;
-      color: #222;
-      line-height: 1.6;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.7;
     }
 
     header {
-      background: #1f3a5f;
+      background: linear-gradient(135deg, var(--navy), var(--blue));
       color: white;
-      padding: 60px 20px;
-      text-align: center;
+      padding: 80px 24px;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 42px;
+    .hero {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.4fr 0.8fr;
+      gap: 40px;
+      align-items: center;
     }
 
-    header p {
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .hero h2 {
+      font-size: 22px;
+      font-weight: 400;
+      color: #EAF2F8;
+    }
+
+    .hero p {
       font-size: 18px;
-      margin-top: 10px;
+      max-width: 750px;
     }
 
-    nav {
-      background: white;
-      padding: 15px;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #1f3a5f;
-      font-weight: bold;
-    }
-
-    section {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    h2 {
-      color: #1f3a5f;
-      border-bottom: 3px solid #1f3a5f;
-      padding-bottom: 8px;
-    }
-
-    .card {
-      background: white;
-      padding: 25px;
-      margin: 20px 0;
-      border-radius: 12px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-    }
-
-    .project h3 {
-      color: #1f3a5f;
-      margin-bottom: 5px;
-    }
-
-    .tag {
-      display: inline-block;
-      background: #e8eef7;
-      color: #1f3a5f;
-      padding: 6px 10px;
-      margin: 4px;
+    .hero-card {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      padding: 28px;
       border-radius: 20px;
-      font-size: 14px;
-    }
-
-    footer {
-      text-align: center;
-      background: #1f3a5f;
-      color: white;
-      padding: 30px 20px;
-      margin-top: 50px;
-    }
-
-    a {
-      color: #1f3a5f;
     }
 
     .button {
       display: inline-block;
-      background: #1f3a5f;
-      color: white;
-      padding: 10px 18px;
-      border-radius: 6px;
+      padding: 12px 20px;
+      margin: 8px 8px 0 0;
+      border-radius: 30px;
       text-decoration: none;
-      margin-top: 10px;
+      font-weight: 700;
     }
 
-    .button:hover {
-      background: #152941;
+    .primary {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .secondary {
+      border: 1px solid white;
+      color: white;
+    }
+
+    nav {
+      background: white;
+      text-align: center;
+      padding: 14px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    nav a {
+      margin: 0 14px;
+      text-decoration: none;
+      color: var(--navy);
+      font-weight: 700;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 55px auto;
+      padding: 0 24px;
+    }
+
+    h2.section-title {
+      color: var(--navy);
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    .line {
+      width: 80px;
+      height: 4px;
+      background: var(--gold);
+      margin-bottom: 25px;
+      border-radius: 4px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 8px 25px rgba(11,31,51,0.08);
+      border: 1px solid var(--border);
+      margin-bottom: 25px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+    }
+
+    .small-card {
+      background: white;
+      padding: 24px;
+      border-radius: 16px;
+      border-left: 5px solid var(--gold);
+      box-shadow: 0 6px 18px rgba(11,31,51,0.06);
+    }
+
+    .small-card h3 {
+      color: var(--blue);
+      margin-top: 0;
+    }
+
+    .project h3 {
+      color: var(--blue);
+      font-size: 25px;
+      margin-bottom: 6px;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .starl {
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      gap: 14px;
+      border-top: 1px solid var(--border);
+      padding-top: 14px;
+      margin-top: 14px;
+    }
+
+    .label {
+      color: var(--navy);
+      font-weight: 800;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #EAF2F8;
+      color: var(--blue);
+      padding: 8px 13px;
+      border-radius: 999px;
+      margin: 5px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .highlight {
+      background: #FFF7E1;
+      border-left: 5px solid var(--gold);
+      padding: 18px;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    footer {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+      padding: 35px;
+      margin-top: 60px;
+    }
+
+    a {
+      color: var(--blue);
+    }
+
+    @media (max-width: 800px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .starl {
+        grid-template-columns: 1fr;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 7px;
+      }
     }
   </style>
 </head>
@@ -114,131 +232,173 @@
 <body>
 
 <header>
-  <h1>Lucille Eyombo, MPS, PMP, CAPM, CSM</h1>
-  <p>Associate Project Manager | Healthcare Operations | Public Health Informatics</p>
-  <p>Maryland, USA</p>
+  <div class="hero">
+    <div>
+      <h1>Lucille Eyombo, PMP, CAPM, CSM</h1>
+      <h2>Associate Project Manager | Healthcare Operations | Public Health Informatics</h2>
+      <p>
+        I build structured, practical, and patient-centered solutions at the intersection of healthcare operations,
+        project management, data, and digital health education.
+      </p>
+      <a class="button primary" href="#projects">View Portfolio Artifacts</a>
+      <a class="button secondary" href="#contact">Contact Me</a>
+    </div>
+
+    <div class="hero-card">
+      <h3>Professional Focus</h3>
+      <p>Healthcare Operations</p>
+      <p>Public Health Informatics</p>
+      <p>Digital Health Education</p>
+      <p>Data-Informed Decision Making</p>
+    </div>
+  </div>
 </header>
 
 <nav>
   <a href="#about">About</a>
   <a href="#pitch">Pitch</a>
-  <a href="#projects">Projects</a>
+  <a href="#competencies">Competencies</a>
+  <a href="#projects">Artifacts</a>
   <a href="#skills">Skills</a>
   <a href="#contact">Contact</a>
 </nav>
 
 <section id="about">
-  <h2>Professional Summary</h2>
+  <h2 class="section-title">About Me</h2>
+  <div class="line"></div>
+
   <div class="card">
     <p>
-      I am an Associate Project Manager with over nine years of experience in healthcare operations,
-      supporting program coordination, compliance, process improvement, and service delivery across
-      multiple healthcare service lines.
+      I am an Associate Project Manager with over nine years of progressive experience in healthcare operations,
+      supporting program coordination, compliance, process improvement, reporting, billing workflows, and service
+      delivery across regulated healthcare environments.
     </p>
 
     <p>
-      I hold a Master’s in Project Management, dual bachelor’s degrees in Political Science and
-      Information Systems Management, and a Graduate Certificate in Lean and Agile Practices from
-      Georgetown University. I am also certified as a PMP, CAPM, and Certified Scrum Master.
+      I hold a Master’s in Project Management, dual bachelor’s degrees in Political Science and Information Systems
+      Management, and a Graduate Certificate in Lean and Agile Practices from Georgetown University. I also hold
+      PMP, CAPM, and Certified Scrum Master certifications.
     </p>
 
     <p>
-      My work sits at the intersection of healthcare, systems, technology, and public health informatics.
-      I focus on building structured, scalable, and patient-centered solutions that improve healthcare
-      operations, education, and outcomes.
+      My professional direction is focused on public health informatics and health technology. I am especially
+      interested in using digital tools, data, and structured project execution to improve healthcare delivery,
+      patient education, and operational performance.
     </p>
+
+    <div class="highlight">
+      <strong>Positioning Statement:</strong> Healthcare operations professional transitioning into public health
+      informatics and health technology, with strong experience in project leadership, process improvement,
+      stakeholder coordination, and patient-centered solutions.
+    </div>
   </div>
 </section>
 
 <section id="pitch">
-  <h2>Elevator Pitch</h2>
+  <h2 class="section-title">60-Second Elevator Pitch</h2>
+  <div class="line"></div>
+
   <div class="card">
     <p>
-      I’m Lucille Eyombo, an Associate Project Manager with over nine years of experience in healthcare
-      operations, where I’ve supported program coordination, compliance, and process improvement across
+      I’m Lucille Eyombo, an Associate Project Manager with over nine years of experience in healthcare operations,
+      where I have supported program coordination, compliance, process improvement, and performance reporting across
       multiple service lines.
     </p>
 
     <p>
-      My background combines healthcare experience, project management, systems thinking, and public
-      health informatics. Recently, through my PHIT internship, I developed a structured digital education
-      program for bariatric and GLP-1 patients, translating complex clinical guidance into practical,
-      easy-to-follow content that supports long-term behavior change.
+      My background combines healthcare experience, project management, systems thinking, and public health
+      informatics. Through my PHIT internship, I developed a structured digital education program for bariatric
+      surgery and GLP-1 patients, translating complex clinical and behavioral guidance into practical,
+      user-friendly learning content.
     </p>
 
     <p>
-      I am currently focused on transitioning into roles in health technology and public health informatics,
-      where I can contribute to building more efficient, data-driven, and patient-centered healthcare systems.
+      What sets me apart is my ability to combine operational experience, structured execution, and data-informed
+      problem solving to design solutions that are practical, scalable, and patient-centered.
     </p>
+  </div>
+</section>
+
+<section id="competencies">
+  <h2 class="section-title">Portfolio Competency Alignment</h2>
+  <div class="line"></div>
+
+  <div class="grid">
+    <div class="small-card">
+      <h3>Healthcare Operations</h3>
+      <p>Program coordination, service tracking, compliance awareness, billing support, and workflow improvement.</p>
+    </div>
+
+    <div class="small-card">
+      <h3>Digital Health Education</h3>
+      <p>Course design, patient education, adult learning support, and behavior-change content development.</p>
+    </div>
+
+    <div class="small-card">
+      <h3>Governance & Strategy</h3>
+      <p>Portfolio governance, lifecycle design, stakeholder alignment, executive reporting, and decision support.</p>
+    </div>
+
+    <div class="small-card">
+      <h3>Data & Quality Improvement</h3>
+      <p>Survey analysis, Excel reporting, trend review, sentiment analysis, and actionable recommendations.</p>
+    </div>
   </div>
 </section>
 
 <section id="projects">
-  <h2>Portfolio Artifacts</h2>
+  <h2 class="section-title">Portfolio Artifacts</h2>
+  <div class="line"></div>
 
   <div class="card project">
     <h3>Digital Health Education Program: Bariatric Surgery & GLP-1 Patient Support</h3>
-    <p><strong>Tool Used:</strong> GrowthHub 365</p>
-    <p>
-      Developed a structured digital education program for individuals undergoing bariatric surgery
-      or using GLP-1 medications. The program includes five core learning areas focused on mindset,
-      emotional eating, nutrition, boundaries, and long-term success.
-    </p>
-    <p>
-      This project demonstrates my ability to translate complex clinical and behavioral guidance into
-      practical, user-centered digital health education.
-    </p>
+    <p class="meta">Tool: GrowthHub 365 | Focus: Digital Health Education, Patient Engagement, Instructional Design</p>
+
+    <div class="starl"><div class="label">Situation</div><div>Patients undergoing bariatric surgery or using GLP-1 medications need structured education to support long-term lifestyle change, adherence, nutrition, emotional regulation, and sustainable success.</div></div>
+    <div class="starl"><div class="label">Task</div><div>I designed a digital education program that translated complex clinical and behavioral guidance into clear, practical, patient-friendly content.</div></div>
+    <div class="starl"><div class="label">Action</div><div>I created a structured course in GrowthHub 365 organized into five core areas: Bariatric Mindset Reset, Emotional Eating Recovery Toolbox, Protein/Water/Vitamins, Boundaries & Food Pushers, and Happy Off The Scale.</div></div>
+    <div class="starl"><div class="label">Result</div><div>The project produced a complete digital course framework that made complex health education easier to understand and positioned the content for scalable use with adult learners.</div></div>
+    <div class="starl"><div class="label">Learning</div><div>This project strengthened my ability to design user-centered digital health education and showed how clear structure can improve patient engagement.</div></div>
   </div>
 
   <div class="card project">
     <h3>Strategic Portfolio Management & Governance Framework</h3>
-    <p><strong>Tool Used:</strong> Smartsheet</p>
-    <p>
-      Contributed to the development of a Strategic Portfolio Management Office framework for Airbus,
-      including governance tiers, portfolio lifecycle phases, stakeholder engagement, and performance
-      monitoring.
-    </p>
-    <p>
-      This project highlights my experience in strategic planning, portfolio governance, and executive-level
-      project alignment.
-    </p>
+    <p class="meta">Tool: Smartsheet | Focus: Governance, Strategic Alignment, Portfolio Management</p>
+
+    <div class="starl"><div class="label">Situation</div><div>Large organizations managing multiple transformation initiatives need strong governance, visibility, and accountability to ensure that projects align with strategic goals.</div></div>
+    <div class="starl"><div class="label">Task</div><div>I contributed to the development of a Strategic Portfolio Management Office framework designed to improve oversight, structured decision-making, and performance monitoring.</div></div>
+    <div class="starl"><div class="label">Action</div><div>I supported a governance model with three tiers: Executive Steering Committee, Portfolio Review Board, and Project Portfolio Management Teams. I also helped define a five-phase lifecycle: Define, Prioritize, Authorize, Optimize, and Sustain.</div></div>
+    <div class="starl"><div class="label">Result</div><div>The framework improved clarity around decision-making, accountability, strategic alignment, lifecycle flow, and portfolio oversight.</div></div>
+    <div class="starl"><div class="label">Learning</div><div>This project deepened my understanding of how governance connects strategy to execution in complex organizational environments.</div></div>
   </div>
 
   <div class="card project">
     <h3>Medical Equipment Procurement & Handover Project</h3>
-    <p><strong>Tools Used:</strong> Excel, Word, Canva, WhatsApp, Email</p>
-    <p>
-      Led coordination for a medical equipment donation initiative supporting Muyuka District Hospital.
-      The project included procurement, logistics, stakeholder communication, shipment tracking, and
-      handover planning.
-    </p>
-    <p>
-      Equipment categories included patient monitors, standard infant warmers, binocular microscopes,
-      semi-automatic chemistry analyzers, auto hematology analyzers, mould incubators, delivery forceps,
-      and operating LED lamps.
-    </p>
-    <p>
-      The project included international freight logistics totaling 1,600,500 FCFA and strengthened hospital
-      capacity across clinical, laboratory, maternal, and surgical services.
-    </p>
+    <p class="meta">Tools: Excel, Word, Canva, WhatsApp, Email | Focus: Healthcare Project Leadership, Logistics, Stakeholder Engagement</p>
+
+    <div class="starl"><div class="label">Situation</div><div>Muyuka District Hospital needed additional medical, laboratory, maternal, and surgical equipment to strengthen patient care and hospital service capacity.</div></div>
+    <div class="starl"><div class="label">Task</div><div>I chaired the project committee and coordinated the medical equipment procurement and handover initiative from planning through delivery and public presentation.</div></div>
+    <div class="starl"><div class="label">Action</div><div>I coordinated stakeholders, supported procurement planning, tracked logistics, developed communication materials, and helped organize the official handover ceremony. The project included international freight logistics totaling <strong>1,600,500 FCFA</strong>.</div></div>
+    <div class="starl"><div class="label">Result</div><div>Equipment included patient monitors, standard infant warmers, delivery forceps, binocular microscopes, semi-automatic chemistry analyzers, auto hematology analyzers, mould incubators, operating LED lamps, and surgical support instruments.</div></div>
+    <div class="starl"><div class="label">Learning</div><div>This project strengthened my leadership in multi-stakeholder coordination, cross-border logistics, communication, accountability, and healthcare project execution.</div></div>
   </div>
 
   <div class="card project">
     <h3>Customer Satisfaction & Program Performance Analysis</h3>
-    <p><strong>Tool Used:</strong> Microsoft Excel</p>
-    <p>
-      Conducted detailed healthcare satisfaction survey analysis, including question-level review, monthly
-      summaries, surveyor summaries, nurse monitor analysis, sentiment review, and executive reporting.
-    </p>
-    <p>
-      This project demonstrates my ability to use data to identify service gaps, communicate insights,
-      and support quality improvement in healthcare programs.
-    </p>
+    <p class="meta">Tool: Microsoft Excel | Focus: Data Analysis, Quality Improvement, Performance Reporting</p>
+
+    <div class="starl"><div class="label">Situation</div><div>Healthcare programs needed clearer insight into satisfaction data to identify service gaps, improve patient experience, and support quality improvement decisions.</div></div>
+    <div class="starl"><div class="label">Task</div><div>I analyzed customer satisfaction and program performance data and translated survey results into actionable insights.</div></div>
+    <div class="starl"><div class="label">Action</div><div>Using Microsoft Excel, I conducted question-level analysis, monthly summaries, surveyor summaries, nurse monitor review, sentiment analysis, charts, and executive-level reporting.</div></div>
+    <div class="starl"><div class="label">Result</div><div>The analysis identified key trends, service strengths, gaps, and improvement opportunities, supporting more informed decision-making and quality improvement.</div></div>
+    <div class="starl"><div class="label">Learning</div><div>This project strengthened my ability to turn raw data into meaningful insights and communicate findings clearly for healthcare stakeholders.</div></div>
   </div>
 </section>
 
 <section id="skills">
-  <h2>Core Skills</h2>
+  <h2 class="section-title">Core Skills & Tools</h2>
+  <div class="line"></div>
+
   <div class="card">
     <span class="tag">Project Management</span>
     <span class="tag">Healthcare Operations</span>
@@ -248,18 +408,21 @@
     <span class="tag">Data Analysis</span>
     <span class="tag">Stakeholder Engagement</span>
     <span class="tag">Smartsheet</span>
-    <span class="tag">Excel</span>
+    <span class="tag">Microsoft Excel</span>
     <span class="tag">GrowthHub 365</span>
     <span class="tag">Lean & Agile</span>
+    <span class="tag">Executive Reporting</span>
   </div>
 </section>
 
 <section id="contact">
-  <h2>Contact</h2>
+  <h2 class="section-title">Contact & Professional Links</h2>
+  <div class="line"></div>
+
   <div class="card">
     <p><strong>Email:</strong>lucilleeyombo@gmail.com</p>
     <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/lucille-eyombo-mps-pmp-49b7b6bb/">View my LinkedIn profile</a></p>
-    <p><strong>Resume:</strong> <a href="[insert resume link]">View my resume</a></p>
+    <p><strong>Resume:</strong> <a href="[Insert Resume PDF Link]">View my resume</a></p>
   </div>
 </section>
 
